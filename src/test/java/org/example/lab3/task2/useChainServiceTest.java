@@ -9,7 +9,7 @@ class useChainServiceTest {
 
     @Test
     void main() {
-        String inputStream = "method:GET\npath:/user/info\nsession:hfhfhfdhdhdhdhf-ayeye76";
+        String inputStream = "method:GET\npath:/user/info\nsession:hfhfhf-dhdhdhdhf-ayeye76";
         ChainService service = new ChainService();
         Request request = service.exec(inputStream);
         assertEquals("GET", request.getMethod());

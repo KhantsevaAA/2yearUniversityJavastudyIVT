@@ -20,6 +20,7 @@ public class DatabaseService {
             addStudent(connection);
             updateStudent(connection);
             transaction(connection);
+            getStudents(connection);
         } catch (SQLException e) {
 
             LOGGER.info(() -> "An SQL Exception occurred: " + e.getMessage());
@@ -81,8 +82,8 @@ public class DatabaseService {
             statement.setString(1, "Сергей непонятный");
             statement.setLong(2, 6);
             statement.execute();
-            String example = null;
-            example.toString();
+//            String example = null;
+//            example.toString();
             connection.commit();
         } catch (RuntimeException e) {
             LOGGER.info(()->"Ошибка "+ e.getMessage());

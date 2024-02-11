@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.example.lab3.task2.useChainServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in org.example.lab3.task2.useChainServiceTest
+main  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <hfhfhf-dhdhdhdhf-ayeye76> but was: <hfhfhfdhdhdhdhf-ayeye76>
+	at org.example.lab3.task2.useChainServiceTest.main(useChainServiceTest.java:17)
+

@@ -22,9 +22,9 @@ public class HibernateSessionService {
 
     public void exec() {
         Student student = studentDao.findById(1L);
-        //LOGGER.info("{}", student);
+        LOGGER.info(()-> String.format("%s", student));
         List<Student> students = studentDao.findAll();
-        //LOGGER.info("{}", students);
+        LOGGER.info(()-> String.format("%s", students));
         Group group = groupDao.findById(1L);
         Student newStudent = new Student();
         newStudent.setName("Иван");
